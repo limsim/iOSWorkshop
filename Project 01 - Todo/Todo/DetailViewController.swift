@@ -15,11 +15,13 @@ class DetailViewController: UIViewController {
   @IBOutlet weak var travelButton: UIButton!
   @IBOutlet weak var todoTitleLabel: UITextField!
   @IBOutlet weak var todoDatePicker: UIDatePicker!
-  
+  @IBOutlet weak var doneButton: UIButton!
+    
   var todo: ToDoItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    doneButton.accessibilityIdentifier = AccessibilityIdentifier.doneButton
     
     if let todo = todo {
       self.title = "Edit Todo"

@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     navigationItem.leftBarButtonItem = editButtonItem
+    //navigationItem.rightBarButtonItem?.accessibilityIdentifier = accessibilityIdentifier.add
     
     todos = [ToDoItem(id: "1", image: "child-selected", title: "Go to Disney", date: dateFromString("2014-10-20")!),
              ToDoItem(id: "2", image: "shopping-cart-selected", title: "Cicso Shopping", date: dateFromString("2014-10-28")!),
